@@ -22,6 +22,7 @@ PKG_MAINTAINER:=Xingwang Liao <kuoruan@gmail.com>
 PKG_BUILD_DEPENDS:=golang/host PACKAGE_v2ray-core-mini:upx/host
 PKG_BUILD_PARALLEL:=1
 PKG_USE_MIPS16:=0
+PKG_BUILD_FLAGS:=no-mips16
 
 PKG_CONFIG_DEPENDS:= \
 	CONFIG_PACKAGE_v2ray_$(BUILD_VARIANT)_exclude_assets \
