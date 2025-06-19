@@ -119,11 +119,11 @@ V2RAY_SED_ARGS:=
 
 ifeq ($(BUILD_VARIANT),mini)
 
-ifeq ($(CONFIG_PACKAGE_v2ray_$(BUILD_VARIANT)_exclude_assets),y)
-V2RAY_SED_ARGS += \
-	s,_ "$(GO_PKG)/infra/conf/geodata/memconservative",// &,; \
-	s,_ "$(GO_PKG)/infra/conf/geodata/standard",// &,;
-endif
+#ifeq ($(CONFIG_PACKAGE_v2ray_$(BUILD_VARIANT)_exclude_assets),y)
+#V2RAY_SED_ARGS += \
+#	s,_ "$(GO_PKG)/infra/conf/geodata/memconservative",// &,; \
+#	s,_ "$(GO_PKG)/infra/conf/geodata/standard",// &,;
+#endif
 
 # enable features
 ifneq ($(CONFIG_PACKAGE_v2ray_$(BUILD_VARIANT)_with_subscription_support),y)
